@@ -1,0 +1,44 @@
+.table-menu {
+  position: relative;
+  display: inline-block;
+
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 10;
+    width: 120px;
+
+    .submenu__item {
+      width: 100%;
+      padding: 10px 12px;
+      background: white;
+      border: none;
+      text-align: left;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+
+      &--danger {
+        color: red;
+      }
+    }
+  }
+}

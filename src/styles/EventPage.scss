@@ -1,0 +1,48 @@
+.events-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6fc;
+
+  &__main {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 1.2rem;
+      color: #1f2937;
+    }
+  }
+
+  &__back {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #c65127;
+  }
+
+  &__welcome {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 2rem;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  &__content {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    min-height: 300px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+  }
+}

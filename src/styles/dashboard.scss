@@ -1,0 +1,17 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6fc;
+
+  &__main {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #c65127;
+    margin-bottom: 1rem;
+  }
+}

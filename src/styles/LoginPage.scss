@@ -1,0 +1,147 @@
+@use "sass:color";
+@use "../styles/variables" as *;
+
+.login__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 2rem;
+	background-color: white;
+}
+
+.login {
+	display: flex;
+	width: 100%;
+	max-width: 900px;
+	height: 625px;
+	border-radius: 20px;
+	overflow: hidden;
+	font-family: "Roboto", sans-serif;
+	box-shadow: 0px 100px 200px 0px #00000040;
+
+	background-color: white;
+
+	&__left {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3rem 2rem;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 756px; // largura exata do card branco
+	}
+
+	&__logo {
+		width: 180px;
+		margin-bottom: 2.5rem;
+	}
+
+	&__title {
+		color: $primary-color;
+		font-size: 26px;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		line-height: 15px;
+		letter-spacing: 0%;
+	}
+
+	&__subtitle {
+		color: #6b7280;
+		font-size: 1rem;
+		margin-bottom: 2.5rem;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	&__field {
+		display: flex;
+		flex-direction: column;
+		font-weight: 600;
+		color: #c65127;
+
+		input {
+			margin-top: 0.5rem;
+			padding: 1rem 1.5rem;
+			border-radius: 999px;
+			border: none;
+			background-color: #f2f2f2;
+			font-size: 1rem;
+		}
+	}
+
+	&__password {
+		position: relative;
+
+		input {
+			width: 100%;
+		}
+
+		.login__toggle {
+			position: absolute;
+			right: 1.4rem;
+			top: 60%;
+			transform: translateY(-50%);
+			background: #f2f2f2;
+			border: none;
+			font-size: 1rem;
+			cursor: pointer;
+			color: #c65127;
+		}
+		
+	}
+
+	&__button {
+		margin-top: 1rem;
+		padding: 1rem;
+		background-color: #c65127;
+		color: white;
+		border: none;
+		border-radius: 999px;
+		font-weight: bold;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: color.adjust(#c65127, $lightness: -10%);
+		}
+	}
+
+	&__right {
+		position: relative;
+		width: 51%;
+		background-color: $primary-color;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		border-radius: 20px;
+		margin: 10px;
+	}
+
+	&__illustration-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end; // ou center / flex-start, se quiser controlar o Y
+		padding: 2rem 0;
+	}
+
+	&__illustration {
+		width: 360px;
+		max-width: 90%;
+		height: auto;
+		object-fit: contain;
+		position: absolute;
+		bottom: 0;
+		left: 31.8%;
+		transform: translateX(-50%);
+	}
+}
